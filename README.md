@@ -262,6 +262,7 @@ Sempre monitore a distância entre o strike e o preço da ação descontando os 
 - Sugestão de alternativas mais conservadoras quando aplicável}
 
 ##### Reposta
+
 Para atuar com a "Mentalidade do Leão" e garantir a sobrevivência e consistência no mercado de opções, é necessário reagir ao presente de forma estratégica em vez de tentar prever o futuro. Uma estratégia de mitigação robusta deve transformar riscos em probabilidades controladas através de processos rigorosos.
 Abaixo, apresento a estrutura de mitigação solicitada:
 
