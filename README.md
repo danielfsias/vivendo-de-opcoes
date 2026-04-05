@@ -254,12 +254,6 @@ Sempre monitore a distância entre o strike e o preço da ação descontando os 
 3) Alertas de risco embutidos nas respostas
 4) Sugestão de alternativas mais conservadoras quando aplicável
 
-# Miniguia de Estudo (Entrega Final)
-## 1. Fundamentos essenciais
-1) O que são opções (Call e Put)
-2) Conceito de strike, vencimento e prêmio
-3) Diferença entre comprador e vendedor de opções
-
 ##### Prompt para mitigação
 {Crie uma estratégia de mitigação que inclua:
 - Checklists antes de sugerir qualquer operação para eu realizar
@@ -314,10 +308,99 @@ Em vez de Comprar a Ação (Capital Intensivo): Use a Venda Coberta do Homem Pob
 Em vez de Venda Coberta Pura (em momentos de incerteza): Use o Strangle Long Put. Você vende as pontas para gerar renda, mas compra uma quantidade maior de Puts longas (Overhead) para se proteger de um crash.
 Em vez de Venda de Put Descoberta: Use a Venda de Put Garantida (Cash-Secured), mantendo 100% do valor da eventual compra em renda fixa de liquidez diária.
 
+# Miniguia de Estudo (Entrega Final)
+## 1. Fundamentos essenciais
+1) O que são opções (Call e Put)
+2) Conceito de strike, vencimento e prêmio
+3) Diferença entre comprador e vendedor de opções
+
+##### Prompt para fundamentos
+{Apresente para mim de forma resumida mas didática os fundamentos essenciais.
+- O que são opções (call e put)
+- Conceito de strike, vencimento e prêmio
+- Diferença entre comprador e vendedor de opções}
+
+##### Resposta
+ara atuar com a "Mentalidade do Leão" no mercado de opções, é fundamental dominar os conceitos básicos que sustentam qualquer estrutura de renda e proteção. Abaixo, apresento os fundamentos essenciais de forma didática e resumida:
+----------------------------------------
+1. O que são Opções (Call e Put)
+Opções são contratos que derivam seu valor de um ativo-objeto (como uma ação) e representam direitos ou obrigações de compra ou venda.
+Call (Opção de Compra): Garante ao seu titular o direito de comprar o ativo-objeto em uma data específica por um preço determinado.
+Put (Opção de Venda): Garante ao seu titular o direito de vender o ativo-objeto em uma data específica por um preço determinado.
+----------------------------------------
+2. Conceito de Strike, Vencimento e Prêmio
+Esses são os três pilares que definem os termos de um contrato de opção:
+Strike (Preço de Exercício): É o preço exato, acertado no momento da montagem da operação, pelo qual o ativo será comprado ou vendido se o direito for exercido.
+Vencimento: É a data em que o contrato expira; após esse dia, o direito do comprador cessa e a opção deixa de existir (podendo "virar pó" se não houver vantagem no exercício).
+Prêmio: É o valor de mercado da opção, pago pelo comprador ao vendedor.
+ Para o investidor focado em renda, o prêmio recebido na venda de opções funciona como um "aluguel" mensal sobre o patrimônio.
+----------------------------------------
+3. Diferença entre Comprador e Vendedor
+No mercado de opções, existem dois lados com perfis de risco e tempo completamente opostos:
+Comprador (Titular):
+Direito: Tem o poder de decidir se exerce ou não a opção.
+Custo: Paga o prêmio para adquirir o direito.
+Risco: Limitado ao valor total pago pelo prêmio.
+Tempo: O tempo trabalha contra (Theta negativo), pois a opção perde valor a cada dia que se aproxima do vencimento.
+Vendedor (Lançador):
+Obrigação: É obrigado a cumprir os termos do contrato caso o comprador decida exercer o direito.
+Recebimento: Recebe o prêmio imediatamente em dinheiro na conta.
+Risco: Pode ser elevado se a operação não estiver devidamente protegida ou "coberta" pelo ativo ou garantias.
+Tempo: O tempo trabalha a favor (Theta positivo), pois o vendedor lucra com o decaimento temporal do valor da opção.
+Insight do Especialista: O investidor que busca consistência prefere atuar mais frequentemente como vendedor, utilizando o decaimento do tempo (Theta) para gerar renda recorrente e proteção para sua carteira de ações.
+
 ## 2. Variáveis críticas (Gregas)
 1) Delta: sensibilidade ao preço
 2) Theta: perda de valor no tempo
 3) Vega: impacto da volatilidade
+
+##### Prompt sobre Gregas
+{Explique de onde vem as gregas e de forma muito didática como eu posso analisar na tomada de decisão.}
+
+##### Resposta
+Para atuar com a "Mentalidade do Leão", você deve entender as Gregas não apenas como fórmulas matemáticas, mas como as forças invisíveis que determinam o preço das opções e o risco das suas operações.
+De onde vêm as Gregas?
+As Gregas originam-se de modelos matemáticos de precificação, sendo o mais famoso o Black & Scholes. Em termos técnicos, elas representam as derivadas da função de precificação em relação às suas variáveis (preço do ativo, tempo, volatilidade e juros). Elas informam como o prêmio da opção se comporta quando uma dessas variáveis muda, mantendo as outras constantes.
+
+--------------------------------------------------------------------------------
+Análise Didática para Tomada de Decisão
+Abaixo, apresento as quatro principais Gregas e como um especialista as utiliza para decidir se entra, sai ou maneja uma posição:
+-----------------------------------------
+1. Delta (Δ): A Velocidade e a Probabilidade
+O que é: Mede quanto o preço da opção se move para cada R$ 1,00 de variação no ativo-objeto.
+Na tomada de decisão:
+Direção: Uma Call tem Delta positivo (0 a 1), enquanto uma Put tem Delta negativo (0 a -1).
+Probabilidade: O Delta é frequentemente usado como uma proxy da probabilidade de uma opção terminar "dentro do dinheiro" (ITM).
+Um Delta de 0,50 sugere cerca de 50% de chance de exercício.
+Hedge: É essencial para calcular quantas opções são necessárias para cobrir ou proteger uma carteira de ações.
+-----------------------------------------
+2. Theta (Θ): O Tempo é Dinheiro
+O que é: Mede o decaimento temporal do prêmio da opção à medida que o vencimento se aproxima.
+Na tomada de decisão:
+Renda Recorrente: Para o "Leão" que busca renda, o Theta positivo é o melhor amigo.
+Ao vender uma opção, você "aluga" o seu tempo; cada dia que passa sem movimento brusco, o valor da opção diminui e o lucro fica com você.
+Comprador vs. Vendedor: Quem compra opções perde valor diariamente (Theta negativo), enquanto quem vende ganha (Theta positivo).
+-----------------------------------------
+3. Vega (ν): O Preço do Medo (Volatilidade)
+O que é: Mede a sensibilidade do prêmio em relação a mudanças na Volatilidade Implícita (IV).
+Na tomada de decisão:
+Venda em Alta: Quando o mercado está em pânico e a volatilidade sobe, o Vega infla os prêmios.
+Este é o momento ideal para vender opções e coletar prêmios "gordos".
+Compra em Baixa: Se a volatilidade está no piso histórico, as opções estão baratas; é o momento de comprar proteção (Hedge) com Vega favorável.
+-----------------------------------------
+4. Gamma (Γ): A Aceleração do Risco
+O que é: Mede a taxa de variação do Delta.
+Se o Delta é a velocidade, o Gamma é a aceleração.
+Na tomada de decisão:
+Risco de Vencimento: O Gamma atinge seu nível máximo em opções At-the-Money (ATM) e aumenta drasticamente conforme o vencimento se aproxima.
+Alerta de Perigo: Se você está vendido em uma opção e o preço do ativo encosta no strike perto do vencimento, o Gamma alto fará seu Delta oscilar violentamente. Isso pode transformar uma operação tranquila em um prejuízo rápido, exigindo manejo imediato.
+Resumo para o Especialista
+Para decidir uma operação, o Leão olha para as Gregas de forma integrada:
+Vende prêmios quando o Vega está alto (volatilidade cara).
+Busca o Theta positivo para gerar renda recorrente com a passagem do tempo.
+Monitora o Delta para saber sua exposição direcional e probabilidade de exercício.
+Cuidado com o Gamma perto do vencimento para não ser pego por movimentos explosivos de "ronca".
+
 
 ## 3. Estruturas básicas de alto valor
 1) Venda coberta (Covered Call)
@@ -338,6 +421,48 @@ Em vez de Venda de Put Descoberta: Use a Venda de Put Garantida (Cash-Secured), 
 1) Regras básicas de imposto de renda para opções
 2) Diferença entre operações comuns e day trade
 3) Compensação de prejuízos
+
+##### Prompt sobre tribução
+{Explique sobre tributação quando eu vendo um call ou put recebo prêmio. Eu pago imposto independente de ser exercido ou só quando não sou exercído?}
+
+##### Resposta
+Para atuar com a "Mentalidade do Leão", você deve encarar a tributação como parte do custo da sua operação e do seu gerenciamento de risco. No mercado de opções, a forma como você paga imposto sobre o prêmio recebido depende diretamente do desfecho da operação: se você foi exercido ou se a opção expirou (ou foi recomprada).
+Atenção: As regras detalhadas abaixo sobre alíquotas e prazos específicos de recolhimento (como os 15% ou 20%) não constam integralmente nos textos das fontes e devem ser verificadas de forma independente para garantir conformidade com a legislação vigente.
+Abaixo, explico a lógica tributária baseada nos princípios de manejo e financiamento presentes nas fontes:
+-----------------------------------------
+1. Quando NÃO há exercício (A opção "vira pó" ou é recomprada)
+Este é o cenário ideal para quem busca renda recorrente através do decaimento temporal (Theta positivo).
+Tributação: Se a opção que você vendeu expirar sem valor (virar pó) ou se você a recomprar por um valor menor para encerrar a posição, o lucro (prêmio recebido menos o custo da recompra, se houver) é considerado um ganho de capital líquido.
+Pagamento: O imposto deve ser apurado sobre o lucro líquido no mês do encerramento da operação (vencimento ou recompra). O investidor é responsável por gerar o documento de arrecadação (DARF) e pagar o imposto devido.
+-----------------------------------------
+2. Quando HÁ exercício (Você cumpre a obrigação)
+Neste cenário, o prêmio não é tributado isoladamente como "lucro em opções", mas passa a integrar o preço do ativo-objeto para fins de cálculo de lucro ou custo médio.
+Na Venda Coberta de Call (Financiamento):
+Lógica: O prêmio recebido é somado ao preço de venda da ação (strike).
+Tributação: O seu lucro será a diferença entre o (Preço de Exercício + Prêmio Recebido) e o seu Preço Médio de compra da ação.
+Você pagará imposto sobre o lucro total da venda das ações no mês em que o exercício ocorreu.
+Na Venda de Put Garantida (Cash-Secured Put):
+Lógica: O prêmio recebido por vender a Put reduz o seu custo de aquisição do ativo.
+Tributação: Se você for exercido e tiver que comprar a ação, você não paga imposto no momento da compra. O prêmio recebido será subtraído do preço de strike para formar o seu novo Preço Médio (Custo Médio = Strike - Prêmio). O imposto só será pago no futuro, quando (e se) você vender essas ações com lucro.
+
+--------------------------------------------------------------------------------
+Resumo Estratégico para o Operador
+Situação
+O que acontece com o prêmio?
+Quando paga imposto?
+Não foi exercido
+É considerado lucro líquido integral.
+No mês em que a opção vence ou é encerrada.
+Foi exercido (Call)
+Soma-se ao valor de venda da ação.
+No mês em que a ação foi entregue (exercida).
+Foi exercido (Put)
+Abate-se do preço de compra da ação.
+Somente quando você vender a ação no futuro.
+Alertas de Risco e Mitigação:
+⚠ Alerta de DARF: O controle de custo médio e prêmios recebidos é de total responsabilidade do investidor. Falhas no acompanhamento podem gerar multas ou bitributação desnecessária.
+Alternativa Conservadora: Para facilitar o controle tributário, muitos investidores preferem operações de Venda Coberta OTM (fora do dinheiro), pois a probabilidade de não ser exercido é maior, mantendo o prêmio como lucro líquido direto no mês da operação.
+
 
 ## 6. Evolução prática
 1) Simulação antes de operar com capital real
