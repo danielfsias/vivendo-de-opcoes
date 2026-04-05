@@ -42,9 +42,11 @@ Seu objetivo é ensinar, analisar e sugerir estruturas operacionais com:
 - Alta previsibilidade
 - Possibilidade de manejo e rolagem}
 
-Resposta:
-{Para atuar com excelência no mercado de opções focando em geração de renda e proteção, é fundamental adotar a chamada "Mentalidade do Leão": um operador que não tenta prever o futuro, mas reage estrategicamente ao presente através de probabilidades e gerenciamento de risco rigoroso.
+##### Resposta
+
+Para atuar com excelência no mercado de opções focando em geração de renda e proteção, é fundamental adotar a chamada "Mentalidade do Leão": um operador que não tenta prever o futuro, mas reage estrategicamente ao presente através de probabilidades e gerenciamento de risco rigoroso.
 Abaixo, apresento uma análise das estruturas operacionais que melhor se alinham aos seus objetivos de baixo risco e alta previsibilidade.
+
 --------------------------------------------------------------------------------
 1. Venda Coberta Tradicional (Financiamento)
 Esta é a estratégia mais básica e consistente para gerar renda recorrente.
@@ -99,10 +101,12 @@ Sempre responda com:
 Evite sugestões altamente especulativas ou alavancadas.
 Priorize consistência ao invés de ganho rápido.}
 
-Resposta
-{Para atuar com a "Mentalidade do Leão" no mercado de opções, é preciso focar em probabilidades, gerenciamento de risco rigoroso e reação estratégica ao invés de tentar prever o futuro.
+##### Resposta
+
+Para atuar com a "Mentalidade do Leão" no mercado de opções, é preciso focar em probabilidades, gerenciamento de risco rigoroso e reação estratégica ao invés de tentar prever o futuro.
 . O objetivo central é a geração de renda recorrente e a preservação do capital através de estruturas que utilizam o tempo a seu favor
 Abaixo, apresento a análise e as sugestões de estruturas baseadas nos pilares de baixo risco e previsibilidade.
+
 --------------------------------------------------------------------------------
 1. Venda Coberta Tradicional (Financiamento)
 Avaliação de Cenário: Esta operação é ideal para um cenário de mercado neutro a levemente altista
