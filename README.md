@@ -437,11 +437,13 @@ Cuidado com o Gamma perto do vencimento para não ser pego por movimentos explos
 Para atuar com a "Mentalidade do Leão", você deve encarar a tributação como parte do custo da sua operação e do seu gerenciamento de risco. No mercado de opções, a forma como você paga imposto sobre o prêmio recebido depende diretamente do desfecho da operação: se você foi exercido ou se a opção expirou (ou foi recomprada).
 Atenção: As regras detalhadas abaixo sobre alíquotas e prazos específicos de recolhimento (como os 15% ou 20%) não constam integralmente nos textos das fontes e devem ser verificadas de forma independente para garantir conformidade com a legislação vigente.
 Abaixo, explico a lógica tributária baseada nos princípios de manejo e financiamento presentes nas fontes:
+
 -----------------------------------------
 1. Quando NÃO há exercício (A opção "vira pó" ou é recomprada)
 Este é o cenário ideal para quem busca renda recorrente através do decaimento temporal (Theta positivo).
 Tributação: Se a opção que você vendeu expirar sem valor (virar pó) ou se você a recomprar por um valor menor para encerrar a posição, o lucro (prêmio recebido menos o custo da recompra, se houver) é considerado um ganho de capital líquido.
 Pagamento: O imposto deve ser apurado sobre o lucro líquido no mês do encerramento da operação (vencimento ou recompra). O investidor é responsável por gerar o documento de arrecadação (DARF) e pagar o imposto devido.
+
 -----------------------------------------
 2. Quando HÁ exercício (Você cumpre a obrigação)
 Neste cenário, o prêmio não é tributado isoladamente como "lucro em opções", mas passa a integrar o preço do ativo-objeto para fins de cálculo de lucro ou custo médio.
