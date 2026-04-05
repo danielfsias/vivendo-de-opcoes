@@ -248,7 +248,7 @@ Manejo Estruturado: Se a posição já estivesse ITM, poderia ter aplicado um St
 Dica de Especialista: Para um "Leão", o dividendo é ótimo, mas ele nunca deve ser o motivo para você perder o controle do strike.
 Sempre monitore a distância entre o strike e o preço da ação descontando os proventos já anunciados.
 
-## Estratégia de mitigação no agente:
+## Estratégia de mitigação:
 1) Checklists antes de sugerir qualquer operação
 2) Simulação de cenários (melhor, pior e esperado)
 3) Alertas de risco embutidos nas respostas
@@ -259,6 +259,60 @@ Sempre monitore a distância entre o strike e o preço da ação descontando os 
 1) O que são opções (Call e Put)
 2) Conceito de strike, vencimento e prêmio
 3) Diferença entre comprador e vendedor de opções
+
+##### Prompt para mitigação
+{Crie uma estratégia de mitigação que inclua:
+- Checklists antes de sugerir qualquer operação para eu realizar
+- Simulação de cenários (melhor, pior e esperado)
+- Alertas de risco embutidos nas respostas
+- Sugestão de alternativas mais conservadoras quando aplicável}
+
+##### Reposta
+Para atuar com a "Mentalidade do Leão" e garantir a sobrevivência e consistência no mercado de opções, é necessário reagir ao presente de forma estratégica em vez de tentar prever o futuro. Uma estratégia de mitigação robusta deve transformar riscos em probabilidades controladas através de processos rigorosos.
+Abaixo, apresento a estrutura de mitigação solicitada:
+
+--------------------------------------------------------------------------------
+1. Checklist Pré-Operacional (A Bússola do Leão)
+Antes de abrir qualquer posição, você deve validar os seguintes pontos para garantir que a probabilidade e a segurança estão a seu favor:
+Análise de Tendência: A Média Móvel de 20 períodos está apontando para onde? (Alta, Baixa ou Lateral).
+Volatilidade Implícita (IV): Qual é o IV Rank ou IV Percentil?.
+Venda opções se a IV estiver alta (acima de 70% do IV Rank) para coletar prêmios "gordos".
+Compre travas se a IV estiver baixa para obter proteção ou alavancagem barata.
+Gestão de Margem: Tenho "gordura" (caixa livre) suficiente caso a corretora peça mais garantias?. Nunca opere no limite.
+Correlação e Beta: Se a operação envolver proteção de carteira (ex: BOVA11), o Beta da carteira foi calculado para dimensionar o hedge corretamente?.
+Relação Risco/Retorno: A estrutura é de Alavancagem Limpa (Trava de Débito)? Evite travas de crédito alavancadas onde você ganha centavos para arriscar reais.
+
+--------------------------------------------------------------------------------
+2. Simulação de Cenários (Exemplo: Venda Coberta)
+Ao planejar uma operação, visualize os três caminhos possíveis no vencimento:
+Cenário
+Comportamento do Ativo
+Resultado Financeiro
+Esperado (Neutro/Leve Alta)
+Ativo oscila perto ou pouco abaixo do strike.
+Você embolsa 100% do prêmio (Theta positivo) e mantém as ações.
+Melhor (No Strike)
+Ativo encerra exatamente no preço de exercício.
+Lucro máximo: valorização do papel até o strike + valor total do prêmio.
+Pior (Queda Bruta/Crash)
+Ativo sofre uma desvalorização acentuada.
+O prêmio recebido serve como um "seguro" parcial, mas você terá prejuízo no patrimônio principal.
+
+--------------------------------------------------------------------------------
+3. Alertas de Risco Embutidos
+Mantenha estes gatilhos de segurança sempre no radar:
+⚠ Alerta de Exercício Antecipado: Opções Americanas podem ser exercidas a qualquer momento. Fique atento se a opção ficar muito "Dentro do Dinheiro" (ITM) perto de datas de dividendos.
+⚠ Alerta de "Ronca" (Prejuízo Acumulado): Se o mercado romper sua estrutura, não paralise. Use a Troca de Risco (Manejo) para salvar a posição, como o Fence Alavancado em quedas ou o Monster Slide em altas explosivas.
+⚠ Alerta de Gamma: Perto do vencimento, o Gamma aumenta para opções próximas ao strike, tornando o Delta muito volátil e a operação instável.
+⚠ Alerta de Volatility Crush: Após eventos programados (como balanços), a IV tende a desabar, o que pode desvalorizar sua opção mesmo que o ativo se mova a seu favor.
+
+--------------------------------------------------------------------------------
+4. Alternativas Mais Conservadoras
+Sempre que o risco parecer elevado para o seu tamanho de "mão", considere estas substituições:
+Em vez de Compra de Call a Seco: Use uma Trava de Alta com Call. Você paga menos e neutraliza parte do efeito corrosivo do tempo (Theta).
+Em vez de Comprar a Ação (Capital Intensivo): Use a Venda Coberta do Homem Pobre (PMCC). Você compra uma Call longa ITM para servir de cobertura e gasta uma fração do capital.
+Em vez de Venda Coberta Pura (em momentos de incerteza): Use o Strangle Long Put. Você vende as pontas para gerar renda, mas compra uma quantidade maior de Puts longas (Overhead) para se proteger de um crash.
+Em vez de Venda de Put Descoberta: Use a Venda de Put Garantida (Cash-Secured), mantendo 100% do valor da eventual compra em renda fixa de liquidez diária.
 
 ## 2. Variáveis críticas (Gregas)
 1) Delta: sensibilidade ao preço
