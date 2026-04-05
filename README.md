@@ -322,12 +322,14 @@ Em vez de Venda de Put Descoberta: Use a Venda de Put Garantida (Cash-Secured), 
 - Diferença entre comprador e vendedor de opções}
 
 ##### Resposta
-ara atuar com a "Mentalidade do Leão" no mercado de opções, é fundamental dominar os conceitos básicos que sustentam qualquer estrutura de renda e proteção. Abaixo, apresento os fundamentos essenciais de forma didática e resumida:
+Para atuar com a "Mentalidade do Leão" no mercado de opções, é fundamental dominar os conceitos básicos que sustentam qualquer estrutura de renda e proteção. Abaixo, apresento os fundamentos essenciais de forma didática e resumida:
+
 ----------------------------------------
 1. O que são Opções (Call e Put)
 Opções são contratos que derivam seu valor de um ativo-objeto (como uma ação) e representam direitos ou obrigações de compra ou venda.
 Call (Opção de Compra): Garante ao seu titular o direito de comprar o ativo-objeto em uma data específica por um preço determinado.
 Put (Opção de Venda): Garante ao seu titular o direito de vender o ativo-objeto em uma data específica por um preço determinado.
+
 ----------------------------------------
 2. Conceito de Strike, Vencimento e Prêmio
 Esses são os três pilares que definem os termos de um contrato de opção:
@@ -335,6 +337,7 @@ Strike (Preço de Exercício): É o preço exato, acertado no momento da montage
 Vencimento: É a data em que o contrato expira; após esse dia, o direito do comprador cessa e a opção deixa de existir (podendo "virar pó" se não houver vantagem no exercício).
 Prêmio: É o valor de mercado da opção, pago pelo comprador ao vendedor.
  Para o investidor focado em renda, o prêmio recebido na venda de opções funciona como um "aluguel" mensal sobre o patrimônio.
+
 ----------------------------------------
 3. Diferença entre Comprador e Vendedor
 No mercado de opções, existem dois lados com perfis de risco e tempo completamente opostos:
@@ -366,6 +369,7 @@ As Gregas originam-se de modelos matemáticos de precificação, sendo o mais fa
 --------------------------------------------------------------------------------
 Análise Didática para Tomada de Decisão
 Abaixo, apresento as quatro principais Gregas e como um especialista as utiliza para decidir se entra, sai ou maneja uma posição:
+
 -----------------------------------------
 1. Delta (Δ): A Velocidade e a Probabilidade
 O que é: Mede quanto o preço da opção se move para cada R$ 1,00 de variação no ativo-objeto.
@@ -374,6 +378,7 @@ Direção: Uma Call tem Delta positivo (0 a 1), enquanto uma Put tem Delta negat
 Probabilidade: O Delta é frequentemente usado como uma proxy da probabilidade de uma opção terminar "dentro do dinheiro" (ITM).
 Um Delta de 0,50 sugere cerca de 50% de chance de exercício.
 Hedge: É essencial para calcular quantas opções são necessárias para cobrir ou proteger uma carteira de ações.
+
 -----------------------------------------
 2. Theta (Θ): O Tempo é Dinheiro
 O que é: Mede o decaimento temporal do prêmio da opção à medida que o vencimento se aproxima.
@@ -381,6 +386,7 @@ Na tomada de decisão:
 Renda Recorrente: Para o "Leão" que busca renda, o Theta positivo é o melhor amigo.
 Ao vender uma opção, você "aluga" o seu tempo; cada dia que passa sem movimento brusco, o valor da opção diminui e o lucro fica com você.
 Comprador vs. Vendedor: Quem compra opções perde valor diariamente (Theta negativo), enquanto quem vende ganha (Theta positivo).
+
 -----------------------------------------
 3. Vega (ν): O Preço do Medo (Volatilidade)
 O que é: Mede a sensibilidade do prêmio em relação a mudanças na Volatilidade Implícita (IV).
@@ -388,6 +394,7 @@ Na tomada de decisão:
 Venda em Alta: Quando o mercado está em pânico e a volatilidade sobe, o Vega infla os prêmios.
 Este é o momento ideal para vender opções e coletar prêmios "gordos".
 Compra em Baixa: Se a volatilidade está no piso histórico, as opções estão baratas; é o momento de comprar proteção (Hedge) com Vega favorável.
+
 -----------------------------------------
 4. Gamma (Γ): A Aceleração do Risco
 O que é: Mede a taxa de variação do Delta.
